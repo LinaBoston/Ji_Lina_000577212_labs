@@ -75,7 +75,6 @@ public class AppGUI extends JFrame {
             }
         };
 
-
         messageArea.setLineWrap(true);
         messageArea.setWrapStyleWord(true);
         messageArea.setEditable(false);
