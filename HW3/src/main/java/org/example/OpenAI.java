@@ -10,7 +10,7 @@ public class OpenAI {
     public static String CallOpenAI(List<String> previousMessages, String userMessageString) {
         var key = System.getenv("OPENAI_API_KEY");
         if (key == null || key.isEmpty()) {
-            throw new IllegalStateException("API key is missing. Please set the OPENAI_API_KEY environment variable.");
+            throw new IllegalStateException("API key is missing. ");
         }
 
         try {
