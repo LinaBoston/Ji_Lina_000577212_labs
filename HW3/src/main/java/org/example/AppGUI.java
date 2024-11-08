@@ -51,6 +51,7 @@ public class AppGUI extends JFrame {
                     userInputField.setText("");
                     SwingUtilities.invokeLater(() -> scrollToBottom(scrollPane));
                 }
+                else JOptionPane.showMessageDialog(AppGUI.this, "Please enter a message to send.", "Input Required", JOptionPane.WARNING_MESSAGE);
             }
         });
     }
@@ -136,5 +137,3 @@ public class AppGUI extends JFrame {
         });
     }
 }
-
-
